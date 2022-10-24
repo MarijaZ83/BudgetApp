@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.budget__header {
+  color: white;
+}
+.header__background {
+  width: 100%;
+  display: flex;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+.header__heading {
+  font-size: 30px;
+}
+.header__total_amount {
+  font-size: 40px;
+  padding: 30px;
+}
+.header__incomeDiv,
+.header__expensesDIv {
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__incomeDiv {
+  background-color: rgb(17, 142, 158);
+  margin-bottom: 7px;
+}
+.header__expensesDIv {
+  background-color: #eb166b;
+}
+.header__income_sign_value {
+  display: flex;
+}
+.header__income_value {
+  padding-left: 2px;
+}
+.header__expense_sign_value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__total_expenses_percentage,
+.table__expenses_percentage {
+  width: 27px;
+  height: 27px;
+  color: #eb166b;
+  background-color: rgb(246, 223, 223);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(219, 219, 240);
+  height: 50px;
+}
+.budget_form {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.form__select {
+  width: 35px;
+  height: 35px;
+  border: solid 1px rgb(206, 206, 238);
+  border-radius: 4px;
+  outline: none;
+}
+.form__input_text {
+  width: 250px;
+  height: 35px;
+  border: solid 1px rgb(206, 206, 238);
+  border-radius: 4px;
+  padding-left: 10px;
+  outline: none;
+}
+.form__input_number {
+  height: 35px;
+  width: 80px;
+  border: solid 1px rgb(206, 206, 238);
+  border-radius: 4px;
+  padding: 0 10px;
+  outline: none;
+}
+.form__submit {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(17, 142, 158);
+  border: none;
+  color: white;
+  margin-left: 3px;
+}
+.form__submit:hover {
+  cursor: pointer;
+}
+.form__alert li {
+  list-style-type: none;
+  color: #eb166b;
+}
+.budget__table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px calc((100% - 550px) / 2);
+}
+.table__income_ul,
+.table__expenses_ul {
+  list-style-type: none;
+  color: rgb(17, 142, 158);
+  width: 250px;
+  padding-bottom: 30px;
+}
+.table__income_ul li,
+.table__expenses_ul li {
+  padding: 10px 0;
+  height: 50px;
+  padding-left: 4px;
+}
+.table__income_ul li {
+  border-bottom: solid 2px rgb(207, 207, 239);
+}
+.table__expenses_ul li {
+  border-bottom: solid 2px rgb(194, 194, 230);
+}
+.table__new_line,
+.table__income_sign_value,
+.table__expense_sign_value,
+.header__income_sign_value,
+.header__expense_sign_value {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.table__new_line:nth-child(odd) {
+  background-color: rgb(219, 219, 240);
+}
+#red {
+  color: #eb166b;
+}
+.table__expense_sign_value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .header__heading {
+    padding-top: 40px;
+    font-size: 40px;
+  }
+  .budget__table {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
